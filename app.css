@@ -37,3 +37,4 @@ input{width:100%;font:16px Lora,Georgia,serif;color:var(--ink);background:#fff;b
 .del{border:0;background:none;color:var(--muted);font:12px Lora,Georgia,serif;text-decoration:underline;cursor:pointer;padding:4px 0 0}
 .vazio{text-align:center;color:var(--muted);font-size:14px;padding:16px 0}
 button:focus-visible,input:focus-visible{outline:3px solid var(--pink);outline-offset:2px}
+.flip{transform:rotate(180deg)}
