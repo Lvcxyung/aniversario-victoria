@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; connect-src https://xuvooubfcvwemicxlxnd.supabase.co; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<title>23 anos da Victória · confirmação de presença</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Parisienne&family=Lora:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<main class="wrap">
+<div class="paper">
+
+<section class="screen on" id="s-invite">
+<img class="full" src="convite.jpg" width="720" height="1280" alt="Convite: 23 anos da Victória, 27/12 às 12:00 no Salão de Festas do Portal Terras de Carrara, apartamento 104, bloco 1">
+<div class="below"><button class="cta" id="b-abrir" type="button">Confirmar presença</button></div>
+</section>
+
+<section class="screen" id="s-form">
+<img class="band" src="topo.jpg" alt="">
+<div class="body">
+<h1>Confirme sua presença</h1>
+<p class="sub">27 de dezembro, ao meio-dia</p>
+<label for="nome">Seu nome</label>
+<input id="nome" maxlength="80" autocomplete="name" placeholder="Ana Paula Ribeiro">
+<p class="err" id="e-nome" role="alert"></p>
+<p class="lbl" id="l-vai">Você vai?</p>
+<div class="opts" role="group" aria-labelledby="l-vai">
+<button class="opt" id="b-sim" type="button" aria-pressed="false">Vou sim</button>
+<button class="opt" id="b-nao" type="button" aria-pressed="false">Não vou</button>
+</div>
+<p class="err" id="e-vai" role="alert"></p>
+<div id="box-comp">
+<p class="lbl">Acompanhantes</p>
+<div id="comps"></div>
+<button class="add" id="b-add" type="button">+ Adicionar acompanhante</button>
+</div>
+<div class="hp" aria-hidden="true"><label for="site">Site</label><input id="site" tabindex="-1" autocomplete="off"></div>
+<button class="cta" id="b-enviar" type="button">Enviar confirmação</button>
+<p class="err center" id="e-envio" role="alert"></p>
+<button class="link" id="b-voltar1" type="button">Voltar ao convite</button>
+</div>
+<img class="band" src="base.jpg" alt="">
+</section>
+
+<section class="screen" id="s-thanks">
+<img class="band" src="topo.jpg" alt="">
+<div class="thanks"><h1 id="t-titulo">Obrigada!</h1><p id="t-msg"></p>
+<button class="link" id="b-voltar2" type="button">Voltar ao convite</button></div>
+<img class="band" src="base.jpg" alt="">
+</section>
+
+<section class="screen" id="s-login">
+<img class="band" src="topo.jpg" alt="">
+<div class="body">
+<h1>Área dos anfitriões</h1>
+<p class="sub">Só vocês dois veem a lista</p>
+<label for="em">E-mail</label>
+<input id="em" type="email" autocomplete="username" maxlength="120">
+<label for="pw" class="mt">Senha</label>
+<input id="pw" type="password" autocomplete="current-password" maxlength="200">
+<p class="err" id="e-login" role="alert"></p>
+<button class="cta" id="b-entrar" type="button">Entrar</button>
+</div>
+</section>
+
+<section class="screen" id="s-admin">
+<div class="body top">
+<h1>Confirmações</h1>
+<p class="sub">Toque em atualizar para ver as respostas novas</p>
+<div class="stats">
+<div class="stat g"><b id="n-vai">0</b><span>pessoas vão</span></div>
+<div class="stat o"><b id="n-nao">0</b><span>não vão</span></div>
+</div>
+<div class="tools"><button class="small" id="b-atualizar" type="button">Atualizar</button><button class="small" id="b-sair" type="button">Sair</button></div>
+<p class="err" id="e-admin" role="alert"></p>
+<div id="lista"></div>
+</div>
+</section>
+
+</div>
+</main>
+<script src="supabase-2.118.0.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
